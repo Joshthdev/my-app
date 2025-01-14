@@ -45,7 +45,7 @@ export default function Home() {
 					</h1>
 					<div className="opacity-90 mb-10">
 						Create a feedback board in minutes, prioritize features, and build
-						products your customers will loveeeeeee.
+						products your customers will love.
 					</div>
 					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
 				</div>
