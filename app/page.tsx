@@ -9,7 +9,7 @@ export default function Home() {
 	const name = "JoshthDev";
 
 	const pricing = [
-		"Collect customer feedback",
+		"Collect customer feedback efficiently",
 		"Unlimited boards",
 		"Admin dashboard",
 		"24/7 support",
