@@ -47,7 +47,7 @@ export default function Home() {
 						Create a feedback board in minutes, prioritize features, and build
 						products your customers will love.
 					</div>
-					<ButtonLogin isLoggedin={isLoggedin} name={name} />
+					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
 				</div>
 			</section>
 
