@@ -28,16 +28,16 @@ export default function Home() {
 							FAQ
 						</a>
 					</div>
-					<ButtonLogin
-						isLoggedin={isLoggedin}
-						name={name}
-						extraStyle="w-86"
-					/>
+					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
 				</div>
 			</section>
 			{/* HERO */}
 			<section className="text-center lg:text-left py-32 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center lg:items-start">
-				<Image src={productDemo} alt="Product Demo" className="w-96 rounded-xl" />
+				<Image
+					src={productDemo}
+					alt="Product Demo"
+					className="w-96 rounded-xl"
+				/>
 
 				<div>
 					<h1 className="text-4xl lg:text-5xl font-extrabold mb-6">
@@ -45,7 +45,7 @@ export default function Home() {
 					</h1>
 					<div className="opacity-90 mb-10">
 						Create a feedback board in minutes, prioritize features, and build
-						products your customers will love.
+						products your customers will loveeeeeee.
 					</div>
 					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
 				</div>
