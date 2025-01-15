@@ -4,9 +4,10 @@ import FAQListItem from "../components/FAQListItem";
 import productDemo from "@/app/productDemo.jpeg";
 import Image from "next/image";
 
+
 export default function Home() {
 	const isLoggedin = true;
-	const name = "JoshthDev";
+	const name = "";
 
 	const pricing = [
 		"Collect customer feedback efficiently",
