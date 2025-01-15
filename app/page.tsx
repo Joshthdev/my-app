@@ -20,7 +20,7 @@ export default function Home() {
 			{/* HEADER */}
 			<section className="bg-base-200">
 				<div className="flex justify-between items-center px-8 py-2 max-w-5xl mx-auto">
-					<div className="font-bold">LouDsImplicitY</div>
+					<div className="font-bold">Datafyy</div>
 					<div className="space-x-4 max-md:hidden">
 						<a className="link link-hover" href="#pricing">
 							Pricing
