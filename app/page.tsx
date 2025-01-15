@@ -91,9 +91,21 @@ export default function Home() {
 
 					<ul className="max-w-lg mx-auto">
 						{[
-							{ question: "What do I get exactly?", answer: "Absolutely" },
-							{ question: "Can I get a refund?", answer: "Defintely you can" },
-							{ question: "I have another question", answer: "Sure go ahead" },
+							{
+								question: "What do I get exactly?",
+								answer:
+									"“An all-in-one solution to boost productivity and gain deeper customer insights.”",
+							},
+							{
+								question: "Can I get a refund?",
+								answer:
+									"“Refunds are available after a 48-hour processing period.”",
+							},
+							{
+								question: "I have another question",
+								answer:
+									"“For any additional questions, our 24/7 support team is always here to help.”",
+							},
 						].map((qa) => (
 							<FAQListItem key={qa.question} qa={qa} />
 						))}
