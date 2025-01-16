@@ -3,11 +3,12 @@ import ListItem from "../components/ListItem";
 import FAQListItem from "../components/FAQListItem";
 import productDemo from "@/app/productDemo.jpeg";
 import Image from "next/image";
+import {auth} from "@/auth"
 
 
-export default function Home() {
-	const isLoggedin = true;
-	const name = "";
+export default async function Home() {
+
+	const session = await auth()
 
 	const pricing = [
 		"Collect customer feedback efficiently",
@@ -18,7 +19,7 @@ export default function Home() {
 	return (
 		<main>
 			{/* HEADER */}
-			<section className="bg-base-200">
+			<section className="bg-base-100">
 				<div className="flex justify-between items-center px-8 py-2 max-w-5xl mx-auto">
 					<div className="font-bold">Datafyy</div>
 					<div className="space-x-4 max-md:hidden">
@@ -29,11 +30,11 @@ export default function Home() {
 							FAQ
 						</a>
 					</div>
-					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
+					<ButtonLogin session={session} extraStyle="w-86" />
 				</div>
 			</section>
 			{/* HERO */}
-			<section className="text-center lg:text-left py-32 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center lg:items-start">
+			<section className="text-center lg:text-left py-64 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center lg:items-start">
 				<Image
 					src={productDemo}
 					alt="Product Demo"
@@ -48,12 +49,12 @@ export default function Home() {
 						Create a feedback board in minutes, prioritize features, and build
 						products your customers will love.
 					</div>
-					<ButtonLogin isLoggedin={isLoggedin} name={name} extraStyle="w-86" />
+					<ButtonLogin session={session} extraStyle="w-86" />
 				</div>
 			</section>
 
 			{/* PRICING */}
-			<section className="bg-base-200" id="pricing">
+			<section className="bg-blue-200" id="pricing">
 				<div className="py-32 px-8 max-w-3xl mx-auto text-center">
 					<p className="text-sm uppercase font-medium text-center text-primary mb-4">
 						Pricing
@@ -62,7 +63,7 @@ export default function Home() {
 						A pricing that adapts to your needs
 					</h2>
 
-					<div className="p-8 bg-base-100 max-w-96 rounded-3xl mx-auto space-y-6">
+					<div className="p-8 bg-base-200 max-w-96 rounded-3xl mx-auto space-y-6">
 						<div className="flex gap-2 items-baseline">
 							<div className="text-4xl font-black">$19</div>
 							<div className="uppercase text-sm font-medium opacity-60">
@@ -75,6 +76,8 @@ export default function Home() {
 								<ListItem key={item} priceitem={item} />
 							))}
 						</ul>
+
+						<ButtonLogin session={session} extraStyle="w-full" />
 					</div>
 				</div>
 			</section>
