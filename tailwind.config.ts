@@ -23,7 +23,6 @@ const config: Config = {
       "cupcake",
       "bumblebee",
       "emerald",
-      "corporate",
       "synthwave",
       "retro",
       "cyberpunk",
