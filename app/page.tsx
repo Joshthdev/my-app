@@ -90,7 +90,7 @@ export default async function Home() {
 
 			{/* FAQ */}
 			<section className="bg-base-200" id="faq">
-				<div className="px-8 py-32 max-w-3xl mx-auto">
+				<div className="px-8 py-32 max-w-3xl mx-auto ">
 					<p className="text-sm uppercase font-medium text-primary mb-4 text-center">
 						FAQ
 					</p>
