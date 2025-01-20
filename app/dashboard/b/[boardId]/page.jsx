@@ -56,7 +56,6 @@ export default async function FeedbackBoard({ params }) {
 				<h1 className="text-3xl lg:text-4xl font-extrabold text-base-content mb-12 text-center">
 					{board.name}
 				</h1>
-
 				<CardBoardLink boardId={boardId} />
 
 				<ButtonDeleteBoard boardId={boardId} />
