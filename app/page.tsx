@@ -20,7 +20,7 @@ export default async function Home() {
 			{/* HEADER */}
 			<section className="bg-base-100">
 				<div className="flex justify-between items-center px-8 py-4 max-w-5xl mx-auto">
-					<div className="font-bold text-base-content">Datafyy</div>
+					<div className="font-bold text-base-content"> 🐦‍🔥 Datafyy</div>
 					<div className="space-x-4 max-md:hidden">
 						<a
 							className="link link-hover text-base-content hover:text-primary"
